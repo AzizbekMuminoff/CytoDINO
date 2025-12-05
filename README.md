@@ -11,13 +11,13 @@ A computationally efficient approach to bone marrow cell classification achievin
 
 ## Summary Metrics
 
-| Metric | DenseNet | DenseNet* | DAGDNet | DAGDNet* | DinoBloom-L | DinoBloom-G | CytoDINO-32 (Proposed) | CytoDINO-64 (Proposed) |
+| Metric | DenseNet | DenseNet* | DAGDNet | DAGDNet* | DinoBloom-L | DinoBloom-G | CytoDINO-32 (Proposed) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Weighted Precision | 84.9% | 87.4% | 85.6% | 88.1% | — | — | 88.0% | **88.1%** |
-| Weighted F1 | 84.5% | 87.1% | 84.9% | 87.8% | 84.9% | 84.9% | **87.7%** | 87.5% |
-| Macro F1 | 55.8% | 64.0% | 55.3% | 71.5% | — | — | **75.4%** | 75.3% |
-| Balanced Accuracy | — | — | — | — | 64.4% | 69.3% | **76.7%**† | 76.3%† |
-| Accuracy | — | — | — | — | 85.0% | 85.0% | **87.5%** | 87.2% |
+| Weighted Precision | 84.9% | 87.4% | 85.6% | 88.1% | — | — | 88.0% | 
+| Weighted F1 | 84.5% | 87.1% | 84.9% | 87.8% | 84.9% | 84.9% | **87.7%** |
+| Macro F1 | 55.8% | 64.0% | 55.3% | 71.5% | — | — | **75.4%** |
+| Balanced Accuracy | — | — | — | — | 64.4% | 69.3% | **76.7%**† | 
+| Accuracy | — | — | — | — | 85.0% | 85.0% | **87.5%** |
 
 > **Note:** Our models achieve state-of-the-art Macro F1 scores (~75%), representing a **+3.9%** improvement over DAGDNet* (71.5%), indicating superior performance on minority classes.
 
