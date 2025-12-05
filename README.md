@@ -11,7 +11,7 @@ A computationally efficient approach to bone marrow cell classification achievin
 
 ## Summary Metrics
 
-| Metric | DenseNet | DenseNet* | DAGDNet | DAGDNet* | DinoBloom-L | DinoBloom-G | CytoDINO-32 (Proposed) |
+| Metric | DenseNet | DenseNet* | DAGDNet | DAGDNet* | DinoBloom-L | DinoBloom-G | CytoDINO (Proposed) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Weighted Precision | 84.9% | 87.4% | 85.6% | 88.1% | — | — | 88.0% | 
 | Weighted F1 | 84.5% | 87.1% | 84.9% | 87.8% | 84.9% | 84.9% | **87.7%** |
