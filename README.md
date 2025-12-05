@@ -19,7 +19,7 @@ A computationally efficient approach to bone marrow cell classification achievin
 | Balanced Accuracy | — | — | — | — | 64.4% | 69.3% | **76.7%**† | 
 | Accuracy | — | — | — | — | 85.0% | 85.0% | **87.5%** |
 
-> **Note:** Our models achieve state-of-the-art Macro F1 scores (~75%), representing a **+3.9%** improvement over DAGDNet* (71.5%), indicating superior performance on minority classes.
+> **Note:** Our models achieve state-of-the-art Macro F1 scores (75.4%), representing a **+3.9%** improvement over DAGDNet* (71.5%), indicating superior performance on minority classes.
 
 ## Quick Start
 
