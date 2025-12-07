@@ -22,7 +22,7 @@ A computationally efficient approach to bone marrow cell classification achievin
 | ESRT | 2025 | 76.1% | — | 75.6% | — | Embedding-Space Re-sampling; test set |
 | **CytoDINO (Ours)** | **2025** | **88.2%** | **76.5%** | **88.2%** | **88.3%** | LoRA fine-tuned DINOv3 |
 
-> **Note:** CytoDINO achieves **SOTA Macro F1 (76.5%)**, a **+5.0%** improvement over DAGDNet (71.5%), indicating superior performance on minority classes. Some models report validation metrics only—our results are on a held-out test set.
+> **Note:** CytoDINO achieves **SOTA Macro F1 (76.5%)**, a **+5.0%** improvement over DAGDNet (71.5%), indicating superior performance on minority classes. Some models report validation metrics only - our results are on an unseen test set.
 
 ### Dataset Reference
 
