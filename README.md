@@ -20,7 +20,7 @@ A computationally efficient approach to bone marrow cell classification achievin
 | DinoBloom-L | 2024 | 84.9% | — | 85.0% | — | Foundation model (linear probe) |
 | DinoBloom-G | 2024 | 84.9% | — | 85.0% | — | Foundation model (linear probe) |
 | ESRT | 2025 | 76.1% | — | 75.6% | — | Embedding-Space Re-sampling; test set |
-| **CytoDINO (Ours)** | **2025** | **88.2%** | **76.5%** | **88.2%** | **88.3%** | LoRA fine-tuned DINOv3 |
+| **CytoDINO (Ours)** | **2025** | **88.2%** | **76.5%** | **88.2%** | **88.3%** | LoRA fine-tuned DINOv3 with transformer classifier |
 
 > **Note:** CytoDINO achieves **SOTA Macro F1 (76.5%)**, a **+5.0%** improvement over DAGDNet (71.5%), indicating superior performance on minority classes. Some models report validation metrics only - our results are on an unseen test set.
 
