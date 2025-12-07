@@ -4,7 +4,7 @@ A computationally efficient approach to bone marrow cell classification achievin
 
 ## Highlights
 
-- **SOTA Performance**: 87.7% Weighted F1, 75.4% Macro F1 — outperforming DAGDNet* and DinoBloom.
+- **SOTA Performance**: 88.2% Weighted F1, 76.5% Macro F1 — outperforming DAGDNet* and DinoBloom.
 - **Efficient Fine-tuning**: LoRA injection enables training on consumer GPUs with only ~5-8% trainable parameters.
 - **Biologically-Informed Loss**: Custom hierarchical label smoothing respecting cell lineage relationships.
 - **Clinical Safety**: Critical error penalty to minimize dangerous misclassifications (e.g., blast to normal).
@@ -18,7 +18,7 @@ A computationally efficient approach to bone marrow cell classification achievin
 | Macro F1 | 55.8% | 64.0% | 55.3% | 71.5% | — | — | **76.5%** |
 | Accuracy | — | — | — | — | 85.0% | 85.0% | **88.2%** |
 
-> **Note:** Our models achieve state-of-the-art Macro F1 scores (75.4%), representing a **+3.9%** improvement over DAGDNet* (71.5%), indicating superior performance on minority classes.
+> **Note:** Our models achieve state-of-the-art Macro F1 scores (76.5%), representing a **+5.0%** improvement over DAGDNet* (71.5%), indicating superior performance on minority classes.
 
 ## Quick Start
 
