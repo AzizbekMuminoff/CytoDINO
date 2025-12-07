@@ -5,7 +5,7 @@ A computationally efficient approach to bone marrow cell classification achievin
 ## Highlights
 
 - **SOTA Performance**: 88.2% Weighted F1, 76.5% Macro F1 — outperforming DAGDNet* and DinoBloom.
-- **Efficient Fine-tuning**: LoRA injection enables training on consumer GPUs with only ~5-8% trainable parameters.
+- **Efficient Fine-tuning**: LoRA injection enables training on consumer GPUs with only ~8% trainable parameters.
 - **Biologically-Informed Loss**: Custom hierarchical label smoothing respecting cell lineage relationships.
 - **Clinical Safety**: Critical error penalty to minimize dangerous misclassifications (e.g., blast to normal).
 
