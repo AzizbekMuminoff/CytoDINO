@@ -9,16 +9,26 @@ A computationally efficient approach to bone marrow cell classification achievin
 - **Biologically-Informed Loss**: Custom hierarchical label smoothing respecting cell lineage relationships.
 - **Clinical Safety**: Critical error penalty to minimize dangerous misclassifications (e.g., blast to normal).
 
-## Summary Metrics
+## Model Comparison on MLL 21-Class Bone Marrow Dataset
 
-| Metric | DenseNet | DenseNet* | DAGDNet | DAGDNet* | DinoBloom-L | DinoBloom-G | CytoDINO (Proposed) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Weighted Precision | 84.9% | 87.4% | 85.6% | 88.1% | — | — | 88.3% | 
-| Weighted F1 | 84.5% | 87.1% | 84.9% | 87.8% | 84.9% | 84.9% | **88.2%** |
-| Macro F1 | 55.8% | 64.0% | 55.3% | 71.5% | — | — | **76.5%** |
-| Accuracy | — | — | — | — | 85.0% | 85.0% | **88.2%** |
+| Model | Year | Weighted F1 | Macro F1 | Accuracy | Weighted Precision | Notes |
+| :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| ResNeXt-50 (Matek et al.) | 2021 | — | 59.0% | — | — | Original baseline on MLL dataset |
+| Siamese Network | 2022 | ~81.0% | — | 84.0% | — | Triplet loss; validation set |
+| HematoNet (CoAtNet) | 2022 | ~86.0% | — | — | — | Used 17 of 21 classes |
+| DAGDNet | 2023 | 87.8% | 71.5% | 88.1% | 88.1% | Dual Attention Gates DenseNet |
+| DinoBloom-L | 2024 | 84.9% | — | 85.0% | — | Foundation model (linear probe) |
+| DinoBloom-G | 2024 | 84.9% | — | 85.0% | — | Foundation model (linear probe) |
+| ESRT | 2025 | 76.1% | — | 75.6% | — | Embedding-Space Re-sampling; test set |
+| **CytoDINO (Ours)** | **2025** | **88.2%** | **76.5%** | **88.2%** | **88.3%** | LoRA fine-tuned DINOv3 |
 
-> **Note:** Our models achieve state-of-the-art Macro F1 scores (76.5%), representing a **+5.0%** improvement over DAGDNet* (71.5%), indicating superior performance on minority classes.
+> **Note:** CytoDINO achieves **SOTA Macro F1 (76.5%)**, a **+5.0%** improvement over DAGDNet (71.5%), indicating superior performance on minority classes. Some models report validation metrics only—our results are on a held-out test set.
+
+### Dataset Reference
+
+The MLL dataset (Matek et al., 2021) contains 171,374 expert-annotated single-cell images from 945 patients across 21 morphological classes.
+
+- Matek et al. (2021). [Highly accurate differentiation of bone marrow cell morphologies using deep neural networks](https://doi.org/10.1182/blood.2020010568). *Blood* 138(20):1917-1927
 
 ## Quick Start
 
