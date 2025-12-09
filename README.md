@@ -1,4 +1,4 @@
-# 🔬 CytoDINO: Bone Marrow Cell Classification model based on DINOv3
+# CytoDINO: Bone Marrow Cell Classification model based on DINOv3
 
 A computationally efficient approach to bone marrow cell classification achieving **state-of-the-art results** on the MLL dataset by fine-tuning DINOv3 with LoRA adapters.
 
